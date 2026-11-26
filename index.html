@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Batchu Saketh — Backend & AI Systems Engineer</title>
-  <meta name="description" content="Batchu Saketh — Backend & AI Systems Engineer specializing in resilient microservices, production RAG pipelines, and agentic AI workflows." />
+  <title>Bachu Saketh - Backend &amp; AI Systems Engineer</title>
+  <meta name="description" content="Bachu Saketh - Backend & AI Systems Engineer designing low-latency microservices, production RAG pipelines, and deterministic agentic workflows in Python, Java, and AWS." />
 
   <!-- Google Fonts: Newsreader (Editorial Serif), Inter (Clean Sans), JetBrains Mono (Technical Metadata) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,7 +15,6 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
-      darkMode: 'class',
       theme: {
         extend: {
           fontFamily: {
@@ -24,20 +23,8 @@
             mono: ['JetBrains Mono', 'monospace'],
           },
           colors: {
-            paper: {
-              light: '#FAFAF9',
-              dark: '#0F0F11',
-            },
-            ink: {
-              light: '#18181B',
-              mutedLight: '#52525B',
-              dark: '#F4F4F5',
-              mutedDark: '#A1A1AA',
-            },
-            rule: {
-              light: '#E5E5E0',
-              dark: '#27272A',
-            }
+            midnight: '#0b1320',
+            coral: '#ff6347',
           }
         }
       }
@@ -45,72 +32,106 @@
   </script>
 
   <style>
-    /* Editorial typography refinements and smooth theme transitions */
-    body {
+    /* Core Midnight-Navy Canvas & Typography Polish */
+    html, body {
+      background-color: #0b1320;
+      color: #f4f4f6;
       font-feature-settings: "cv02", "cv03", "cv04", "cv11";
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      transition: background-color 0.25s ease, color 0.25s ease;
     }
 
-    /* Fluted / Reeded Glass Atmospheric Hero (Inspired by Tidewell) */
+    /* Atmospheric Sunset-Navy Radial Mesh for Hero */
     .hero-atmosphere {
-      background-color: #0c1624;
+      background-color: #0b1320;
       background-image:
-        radial-gradient(circle at 60% 56%, rgba(216, 91, 70, 0.72) 0%, rgba(201, 78, 58, 0.34) 26%, rgba(12, 22, 36, 0) 60%),
-        radial-gradient(circle at 22% 38%, rgba(71, 108, 148, 0.48) 0%, rgba(12, 22, 36, 0) 54%),
-        radial-gradient(circle at 86% 24%, rgba(114, 144, 178, 0.36) 0%, rgba(12, 22, 36, 0) 50%),
-        linear-gradient(135deg, #0a1320 0%, #16263b 48%, #0b1422 100%);
+        radial-gradient(circle at 50% 42%, rgba(217, 95, 74, 0.62) 0%, rgba(196, 76, 56, 0.28) 28%, rgba(11, 19, 32, 0) 62%),
+        radial-gradient(circle at 18% 32%, rgba(68, 108, 152, 0.45) 0%, rgba(11, 19, 32, 0) 54%),
+        radial-gradient(circle at 84% 28%, rgba(102, 136, 174, 0.34) 0%, rgba(11, 19, 32, 0) 52%),
+        linear-gradient(180deg, #09111d 0%, #122034 55%, #0b1320 100%);
     }
 
-    /* Vertical ribbed / fluted glass ridges */
+    /* Vertical Fluted / Reeded Glass Texture */
     .fluted-glass-ridges {
       background-image: repeating-linear-gradient(
         90deg,
         rgba(255, 255, 255, 0.055) 0px,
         rgba(255, 255, 255, 0.012) 3px,
-        rgba(4, 10, 18, 0.28) 6px,
+        rgba(4, 9, 17, 0.30) 6px,
         rgba(255, 255, 255, 0.035) 8px
       );
       backdrop-filter: blur(2px);
       -webkit-backdrop-filter: blur(2px);
     }
 
-    /* Tactile film grain overlay via inline SVG turbulence */
-    .hero-grain {
+    /* Seamless Bottom Dissolve into Midnight-Navy Body */
+    .hero-seamless-fade {
+      background: linear-gradient(
+        180deg,
+        rgba(11, 19, 32, 0) 0%,
+        rgba(11, 19, 32, 0.65) 60%,
+        #0b1320 100%
+      );
+    }
+
+    /* Subtle Tactile Film Grain Overlay */
+    .ambient-grain {
       background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.14'/%3E%3C/svg%3E");
       mix-blend-mode: overlay;
     }
 
-    /* Frosted glass pill & status card */
+    /* Lower Body Subtle Ambient Glows */
+    .body-ambient-glow {
+      background-image:
+        radial-gradient(circle at 12% 18%, rgba(217, 95, 74, 0.065) 0%, rgba(11, 19, 32, 0) 42%),
+        radial-gradient(circle at 88% 52%, rgba(72, 114, 162, 0.08) 0%, rgba(11, 19, 32, 0) 46%),
+        radial-gradient(circle at 22% 86%, rgba(217, 95, 74, 0.05) 0%, rgba(11, 19, 32, 0) 40%);
+    }
+
+    /* Frosted Glass Surfaces */
     .glass-pill {
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.14);
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.13);
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
     }
 
-    .glass-card {
-      background: rgba(18, 28, 44, 0.42);
-      border: 1px solid rgba(255, 255, 255, 0.16);
-      box-shadow: 0 24px 48px -12px rgba(4, 9, 18, 0.55);
+    .glass-strip {
+      background: rgba(16, 26, 43, 0.56);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 0 24px 48px -16px rgba(3, 8, 16, 0.65);
       backdrop-filter: blur(18px);
       -webkit-backdrop-filter: blur(18px);
     }
 
-    /* Subtle link underline animation matching editorial publications */
+    .bento-glass {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      transition: border-color 0.22s ease, background-color 0.22s ease, transform 0.22s ease;
+    }
+
+    .bento-glass:hover {
+      background: rgba(255, 255, 255, 0.045);
+      border-color: rgba(255, 99, 71, 0.38);
+    }
+
+    /* Editorial Underline Link */
     .editorial-link {
       position: relative;
       text-decoration: none;
-      border-bottom: 1px solid currentColor;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.35);
       padding-bottom: 1px;
-      transition: opacity 0.15s ease;
-    }
-    .editorial-link:hover {
-      opacity: 0.65;
+      transition: color 0.15s ease, border-color 0.15s ease;
     }
 
-    /* Custom scrollbar for article reader drawer */
+    .editorial-link:hover {
+      color: #ff6347;
+      border-color: #ff6347;
+    }
+
+    /* Modal Custom Scrollbar & Prose Styling */
     .reader-scroll::-webkit-scrollbar {
       width: 6px;
     }
@@ -118,19 +139,20 @@
       background: transparent;
     }
     .reader-scroll::-webkit-scrollbar-thumb {
-      background: rgba(120, 120, 128, 0.25);
+      background: rgba(255, 255, 255, 0.16);
       border-radius: 9999px;
     }
 
-    /* Prose styling for embedded engineering notes */
     .article-prose p {
       margin-bottom: 1.25rem;
-      line-height: 1.75;
+      line-height: 1.78;
+      color: #d4d7de;
     }
     .article-prose h3 {
       font-family: 'Newsreader', Georgia, serif;
-      font-size: 1.35rem;
-      font-weight: 500;
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: #ffffff;
       margin-top: 2rem;
       margin-bottom: 0.75rem;
     }
@@ -138,633 +160,534 @@
       font-family: 'JetBrains Mono', monospace;
       font-size: 0.8125rem;
       padding: 1rem 1.25rem;
-      border-radius: 0.5rem;
+      border-radius: 0.75rem;
       overflow-x: auto;
       margin-bottom: 1.5rem;
-      line-height: 1.6;
+      line-height: 1.65;
+      background: rgba(7, 13, 23, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #e2e8f0;
     }
     .article-prose ul {
       list-style-type: disc;
       padding-left: 1.25rem;
       margin-bottom: 1.25rem;
+      color: #d4d7de;
     }
     .article-prose li {
       margin-bottom: 0.5rem;
-      line-height: 1.65;
+      line-height: 1.7;
+    }
+    .article-prose strong {
+      color: #ffffff;
+      font-weight: 500;
     }
   </style>
 </head>
 
-<body class="bg-[#faf9f6] text-ink-light dark:bg-paper-dark dark:text-ink-dark selection:bg-zinc-900 selection:text-zinc-50 dark:selection:bg-zinc-100 dark:selection:text-zinc-900">
+<body class="bg-[#0b1320] text-[#f4f4f6] selection:bg-[#ff6347] selection:text-white">
 
-  <!-- ATMOSPHERIC FLUTED-GLASS HERO SECTION -->
-  <section id="top" class="relative overflow-hidden hero-atmosphere text-white border-b border-white/10">
-    <!-- Fluted Vertical Glass & Grain Layers -->
+  <!-- ===================================================================== -->
+  <!-- ATMOSPHERIC FLUTED-GLASS HERO SECTION (CENTERED EDITORIAL ANCHOR)     -->
+  <!-- ===================================================================== -->
+  <section id="top" class="relative overflow-hidden hero-atmosphere text-white">
+    <!-- Vertical Fluted Glass & Film Grain Overlays -->
     <div aria-hidden="true" class="pointer-events-none absolute inset-0 fluted-glass-ridges"></div>
-    <div aria-hidden="true" class="pointer-events-none absolute inset-0 hero-grain"></div>
+    <div aria-hidden="true" class="pointer-events-none absolute inset-0 ambient-grain"></div>
+    <!-- Seamless Dissolve Gradient into #0b1320 Body -->
+    <div aria-hidden="true" class="pointer-events-none absolute inset-x-0 bottom-0 h-32 hero-seamless-fade"></div>
 
-    <!-- Hero Inner Container -->
-    <div class="relative z-10 max-w-[1120px] mx-auto px-5 sm:px-8 pt-6 pb-8 flex flex-col justify-between min-h-[600px] sm:min-h-[640px]">
+    <div class="relative z-10 max-w-[1040px] mx-auto px-5 sm:px-8 pt-6 pb-12 sm:pb-16 flex flex-col justify-between min-h-[600px]">
 
-      <!-- Top Floating Navigation Bar -->
-      <header class="flex items-center justify-between gap-4">
-        <a href="#top" class="inline-flex items-center gap-2 font-sans text-base sm:text-lg font-medium tracking-tight text-white/95 hover:text-white transition-opacity">
-          <span class="text-[#ff6347] font-mono text-xl leading-none">~</span>
-          <span>Bachu Saketh</span>
+      <!-- Floating Top Navigation Bar -->
+      <header class="flex items-center justify-between gap-3">
+        <!-- Left Subtle Monogram -->
+        <a href="#top" class="inline-flex items-center gap-2 font-mono text-xs sm:text-sm text-white/85 hover:text-white transition-colors">
+          <span class="text-[#ff6347] text-base leading-none">~</span>
+          <span>bs.dev</span>
         </a>
 
         <!-- Center Frosted Pill Nav -->
-        <nav aria-label="Primary" class="hidden md:flex items-center gap-1 p-1 rounded-full glass-pill text-xs sm:text-sm text-white/80">
-          <a href="#about" class="px-3.5 py-1.5 rounded-full bg-white/15 text-white font-medium inline-flex items-center gap-1.5">
-            <span class="w-1.5 h-1.5 rounded-full bg-[#ff6347]"></span>
-            About
-          </a>
-          <a href="#experience" class="px-3.5 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-colors">Experience</a>
-          <a href="#systems" class="px-3.5 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-colors">Systems</a>
-          <a href="#writing" class="px-3.5 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-colors">Notes</a>
+        <nav aria-label="Primary Navigation" class="flex items-center gap-0.5 sm:gap-1 p-1 rounded-full glass-pill text-xs sm:text-sm text-white/80 overflow-x-auto max-w-full">
+          <a href="#about" class="px-3 sm:px-3.5 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-colors whitespace-nowrap">About</a>
+          <a href="#experience" class="px-3 sm:px-3.5 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-colors whitespace-nowrap">Experience</a>
+          <a href="#systems" class="px-3 sm:px-3.5 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-colors whitespace-nowrap">Systems</a>
+          <a href="#writing" class="px-3 sm:px-3.5 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-colors whitespace-nowrap">Notes</a>
+          <a href="#contact" class="px-3 sm:px-3.5 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-colors whitespace-nowrap">Contact</a>
         </nav>
 
-        <!-- Right Quick Actions -->
-        <div class="flex items-center gap-2.5">
-          <a
-            href="https://github.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub Profile"
-            class="w-9 h-9 rounded-full bg-white text-[#0c1624] flex items-center justify-center hover:scale-105 transition-transform shadow-sm"
-          >
-            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
-            </svg>
-          </a>
-
-          <button
-            id="theme-toggle"
-            type="button"
-            aria-label="Toggle editorial reading theme"
-            title="Toggle Light / Dark Editorial Mode"
-            class="w-9 h-9 rounded-full glass-pill text-white flex items-center justify-center hover:bg-white/15 transition-colors cursor-pointer"
-          >
-            <svg id="icon-sun" class="hidden w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
-              <circle cx="12" cy="12" r="4"></circle>
-              <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
-            </svg>
-            <svg id="icon-moon" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
-              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-            </svg>
-          </button>
-        </div>
+        <!-- Right Quick Copy Email Pill -->
+        <button
+          id="copy-email-nav"
+          type="button"
+          class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full glass-pill hover:bg-white/15 text-xs font-mono text-white/90 hover:text-white transition-all cursor-pointer shrink-0"
+          title="Copy email address"
+        >
+          <span class="w-1.5 h-1.5 rounded-full bg-[#ff6347]"></span>
+          <span>Copy Email</span>
+        </button>
       </header>
 
-      <!-- Main Hero Split Grid -->
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-end my-auto py-12 sm:py-16">
-        <!-- Left Headline & CTAs -->
-        <div class="lg:col-span-7">
-          <h1 class="font-sans font-medium text-4xl sm:text-6xl lg:text-[64px] tracking-tight leading-[1.04] text-white mb-5">
-            Backend &amp; AI systems built for scale.
-          </h1>
-          <p class="text-sm sm:text-base text-white/80 leading-relaxed max-w-[500px] mb-8">
-            Designing low-latency microservices, production RAG pipelines, and agentic workflows in Python, Java, and AWS.
-          </p>
-
-          <div class="flex flex-wrap items-center gap-5">
-            <a
-              href="#systems"
-              class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#ff6347] hover:bg-[#ff5233] text-white text-sm font-medium shadow-lg shadow-[#ff6347]/25 transition-all"
-            >
-              <span>Explore Systems</span>
-              <span aria-hidden="true">↗</span>
-            </a>
-            <a
-              href="#writing"
-              class="inline-flex items-center gap-1.5 text-sm font-medium text-white/90 hover:text-white transition-colors"
-            >
-              <span>Engineering Notes</span>
-              <span aria-hidden="true">↗</span>
-            </a>
-          </div>
+      <!-- Centered Editorial Hero Focal Point -->
+      <div class="my-auto py-14 sm:py-20 text-center max-w-[780px] mx-auto">
+        <!-- Pedigree Pill -->
+        <div class="inline-flex flex-wrap items-center justify-center gap-2 px-3.5 py-1.5 rounded-full glass-pill font-mono text-[11px] sm:text-xs text-white/85 mb-6">
+          <span>Ex-LTIMindtree</span>
+          <span class="text-white/35">·</span>
+          <span>Ex-Wipro</span>
+          <span class="text-white/35">·</span>
+          <span>B.Tech CSE (AI &amp; ML), MGIT Hyderabad</span>
         </div>
 
-        <!-- Right Frosted Glass Focus & Stack Card -->
-        <div class="lg:col-span-5 lg:justify-self-end w-full max-w-[390px]">
-          <div class="glass-card rounded-2xl p-4 sm:p-5 text-white">
-            <!-- Top grabber bar -->
-            <div class="w-8 h-1 rounded-full bg-white/25 mx-auto mb-3.5"></div>
+        <!-- Massive Centered Display Name -->
+        <h1 class="font-serif font-normal text-5xl sm:text-7xl lg:text-[82px] tracking-tight leading-[1.02] text-white mb-6">
+          Bachu Saketh
+        </h1>
 
-            <!-- Location & Availability -->
-            <div class="flex items-center gap-2 text-xs text-white/75 mb-3 px-1">
-              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-              <span>Hyderabad, IN · Open to SDE / AI Roles</span>
+        <!-- Crisp Positioning Subtitle -->
+        <p class="font-sans text-base sm:text-lg text-white/85 leading-relaxed max-w-[640px] mx-auto mb-9 font-light">
+          Backend &amp; AI Systems Engineer — designing low-latency microservices, production RAG pipelines, and deterministic agentic workflows in Python, Java, and AWS.
+        </p>
+
+        <!-- Centered Action CTAs -->
+        <div class="flex flex-wrap items-center justify-center gap-4">
+          <a
+            href="#systems"
+            class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#ff6347] hover:bg-[#ff5233] text-white text-sm font-medium shadow-lg shadow-[#ff6347]/30 transition-all"
+          >
+            <span>Explore Systems</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+          <a
+            href="#writing"
+            class="inline-flex items-center gap-2 px-6 py-3 rounded-full glass-pill hover:bg-white/15 text-white text-sm font-medium transition-all"
+          >
+            <span>Engineering Notes</span>
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Horizontal Frosted-Glass Status & Stack Strip -->
+      <div class="glass-strip rounded-2xl p-4 sm:p-5">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 items-center text-left">
+          <!-- Column 1: Location & Availability -->
+          <div class="md:border-r md:border-white/10 md:pr-5">
+            <div class="font-mono text-[10px] uppercase tracking-[0.14em] text-white/50 mb-1">
+              Status &amp; Base
             </div>
-
-            <!-- Sub-card 1 -->
-            <div class="rounded-xl bg-white/[0.06] border border-white/10 p-3.5 mb-2.5">
-              <div class="flex items-center justify-between text-xs text-white/60 mb-1">
-                <span class="font-medium text-white/95">KnowledgeOps Copilot</span>
-                <span class="font-mono text-[11px]">Production RAG</span>
-              </div>
-              <div class="flex items-center justify-between gap-2 mt-1.5">
-                <span class="font-sans text-base font-medium">RAG + Qdrant</span>
-                <span class="font-mono text-[10px] px-2 py-0.5 rounded-full bg-white/10 text-white/80">Tool Calling</span>
-                <span class="font-sans text-base font-medium">AWS Terraform</span>
-              </div>
+            <div class="flex items-center gap-2 text-xs sm:text-sm font-medium text-white">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shrink-0"></span>
+              <span>Hyderabad, IN · Open to SDE / Backend / AI Roles</span>
             </div>
+          </div>
 
-            <!-- Sub-card 2 -->
-            <div class="rounded-xl bg-white/[0.06] border border-white/10 p-3.5 mb-3.5">
-              <div class="flex items-center justify-between text-xs text-white/60 mb-1">
-                <span class="font-medium text-white/95">Core Engineering Stack</span>
-                <span class="font-mono text-[11px]">Microservices</span>
-              </div>
-              <div class="flex items-center justify-between gap-2 mt-1.5">
-                <span class="font-sans text-base font-medium">Python · FastAPI</span>
-                <span class="font-mono text-[10px] px-2 py-0.5 rounded-full bg-white/10 text-white/80">REST / JWT</span>
-                <span class="font-sans text-base font-medium">Java 21 · Spring</span>
-              </div>
+          <!-- Column 2: Current Focus -->
+          <div class="md:border-r md:border-white/10 md:pr-5">
+            <div class="font-mono text-[10px] uppercase tracking-[0.14em] text-[#ff6347] mb-1">
+              Current Build Focus
             </div>
+            <div class="text-xs sm:text-sm font-medium text-white/95">
+              Rules-as-Code Eligibility Agent &amp; KnowledgeOps Copilot
+            </div>
+          </div>
 
-            <!-- Coral Pill Badge -->
-            <div class="flex items-center justify-between gap-2">
-              <span class="inline-flex items-center px-3 py-1 rounded-full bg-[#ff6347] text-white font-mono text-[11px] font-medium">
-                B.Tech CSE (AI &amp; ML) · 8.38 CGPA
-              </span>
-              <button
-                id="copy-email-hero"
-                type="button"
-                class="font-mono text-[11px] text-white/80 hover:text-white underline underline-offset-4 cursor-pointer"
-              >
-                Copy email
-              </button>
+          <!-- Column 3: Core Stack -->
+          <div>
+            <div class="font-mono text-[10px] uppercase tracking-[0.14em] text-white/50 mb-1">
+              Core Production Stack
+            </div>
+            <div class="font-mono text-xs text-white/90">
+              Python · FastAPI · Java 21 · Spring Boot · PostgreSQL · AWS
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Bottom Hero Feature Strip -->
-      <div class="pt-5 border-t border-white/15 relative">
-        <!-- Coral Active Indicator Line -->
-        <div aria-hidden="true" class="absolute -top-[1px] left-0 w-36 sm:w-44 h-[2px] bg-[#ff6347]"></div>
-
-        <div class="grid grid-cols-2 sm:grid-cols-4 gap-5 text-xs">
-          <div>
-            <div class="text-[#ff6347] font-mono mb-1">01</div>
-            <p class="font-medium text-white">Production RAG &amp; Agents</p>
-            <p class="text-white/60 mt-0.5">Qdrant, LangGraph, OpenAI API</p>
-          </div>
-          <div>
-            <div class="text-white/50 font-mono mb-1">02</div>
-            <p class="font-medium text-white/90">Spring Boot &amp; FastAPI</p>
-            <p class="text-white/60 mt-0.5">High-throughput REST &amp; RBAC</p>
-          </div>
-          <div>
-            <div class="text-white/50 font-mono mb-1">03</div>
-            <p class="font-medium text-white/90">Cloud &amp; CI/CD</p>
-            <p class="text-white/60 mt-0.5">AWS, Terraform, Docker, Jenkins</p>
-          </div>
-          <div>
-            <div class="text-white/50 font-mono mb-1">04</div>
-            <p class="font-medium text-white/90">Ex-LTIMindtree &amp; Wipro</p>
-            <p class="text-white/60 mt-0.5">Enterprise Java &amp; Full Stack</p>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 
-  <!-- CLEAN EDITORIAL BODY (820px SINGLE-COLUMN READING MEASURE) -->
-  <main id="about" class="max-w-[820px] mx-auto px-5 sm:px-8 pt-14 sm:pt-20 pb-24">
+  <!-- ===================================================================== -->
+  <!-- LOWER PAGE: MIDNIGHT-NAVY EDITORIAL FLOW (~820px READING MEASURE)     -->
+  <!-- ===================================================================== -->
+  <div class="relative body-ambient-glow">
+    <div aria-hidden="true" class="pointer-events-none absolute inset-0 ambient-grain opacity-40"></div>
 
-    <!-- EXECUTIVE SUMMARY STRIP -->
-    <section class="pb-12 border-b border-rule-light dark:border-rule-dark">
-      <div class="flex flex-wrap items-center justify-between gap-4 mb-5">
-        <span class="font-mono text-xs uppercase tracking-[0.14em] text-ink-mutedLight dark:text-ink-mutedDark">
-          00 / Overview
-        </span>
-        <div class="flex items-center gap-5 text-xs font-mono">
-          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="editorial-link">GitHub ↗</a>
-          <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="editorial-link">LinkedIn ↗</a>
-        </div>
-      </div>
+    <main id="about" class="relative z-10 max-w-[820px] mx-auto px-5 sm:px-8 pt-10 sm:pt-14 pb-24">
 
-      <p class="font-serif text-xl sm:text-2xl leading-relaxed text-ink-light dark:text-ink-dark">
-        I’m a Backend &amp; AI Systems Engineer focused on turning probabilistic language models and distributed services into dependable production software. Computer Science (AI &amp; ML) graduate from Mahatma Gandhi Institute of Technology (MGIT), Hyderabad.
-      </p>
-    </section>
-
-    <!-- EXPERIENCE & PEDIGREE TIMELINE -->
-    <section id="experience" class="py-14 sm:py-16 border-b border-rule-light dark:border-rule-dark scroll-mt-8">
-      <div class="flex items-baseline justify-between mb-9">
-        <h2 class="font-mono text-xs uppercase tracking-[0.14em] text-ink-mutedLight dark:text-ink-mutedDark">
-          01 / Experience
-        </h2>
-        <span class="font-mono text-xs text-ink-mutedLight dark:text-ink-mutedDark">
-          2024 — 2026
-        </span>
-      </div>
-
-      <div class="space-y-10">
-        <!-- Role 1 -->
-        <article class="group">
-          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 mb-2">
-            <h3 class="text-base sm:text-lg font-medium">
-              Graduate Engineer Trainee <span class="text-ink-mutedLight dark:text-ink-mutedDark font-normal">— LTIMindtree</span>
-            </h3>
-            <span class="font-mono text-xs text-ink-mutedLight dark:text-ink-mutedDark shrink-0">
-              Dec 2025 – Jan 2026
-            </span>
-          </div>
-          <p class="text-sm sm:text-[15px] leading-relaxed text-ink-mutedLight dark:text-ink-mutedDark">
-            Completed intensive technical onboarding and enterprise application engineering training across Java backend architectures and Android development stacks, focusing on clean object-oriented design and production delivery standards.
-          </p>
-        </article>
-
-        <!-- Role 2 -->
-        <article class="group">
-          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 mb-2">
-            <h3 class="text-base sm:text-lg font-medium">
-              Java Full Stack Engineer Intern <span class="text-ink-mutedLight dark:text-ink-mutedDark font-normal">— Wipro, Hyderabad</span>
-            </h3>
-            <span class="font-mono text-xs text-ink-mutedLight dark:text-ink-mutedDark shrink-0">
-              May 2024 – Oct 2024
-            </span>
-          </div>
-          <p class="text-sm sm:text-[15px] leading-relaxed text-ink-mutedLight dark:text-ink-mutedDark">
-            Engineered RESTful Spring Boot microservices, integrated responsive React.js interfaces, and introduced Redis caching layers to cut repetitive read latency. Authored comprehensive JUnit test suites and automated build-and-deploy workflows via Jenkins CI/CD pipelines.
-          </p>
-        </article>
-
-        <!-- Role 3 -->
-        <article class="group">
-          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 mb-2">
-            <h3 class="text-base sm:text-lg font-medium">
-              AI/ML Intern <span class="text-ink-mutedLight dark:text-ink-mutedDark font-normal">— YBI Foundation</span>
-            </h3>
-            <span class="font-mono text-xs text-ink-mutedLight dark:text-ink-mutedDark shrink-0">
-              May 2024 – Jun 2024
-            </span>
-          </div>
-          <p class="text-sm sm:text-[15px] leading-relaxed text-ink-mutedLight dark:text-ink-mutedDark">
-            Trained, evaluated, and benchmarked agricultural crop yield prediction models across Linear Regression, Random Forest, and XGBoost, packaging the winning model behind low-latency Flask REST inference endpoints.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <!-- FEATURED SYSTEMS & ARCHITECTURAL BUILDS -->
-    <section id="systems" class="py-14 sm:py-16 border-b border-rule-light dark:border-rule-dark scroll-mt-16">
-      <div class="flex items-baseline justify-between mb-9">
-        <h2 class="font-mono text-xs uppercase tracking-[0.14em] text-ink-mutedLight dark:text-ink-mutedDark">
-          02 / Selected Systems
-        </h2>
-        <span class="font-mono text-xs text-ink-mutedLight dark:text-ink-mutedDark">
-          Production &amp; Reference Architectures
-        </span>
-      </div>
-
-      <div class="space-y-8">
-        <!-- Project 1: KnowledgeOps Copilot -->
-        <div class="p-5 sm:p-6 rounded-xl border border-rule-light dark:border-rule-dark bg-white/60 dark:bg-zinc-900/40 hover:border-zinc-400 dark:hover:border-zinc-700 transition-colors">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
-            <h3 class="font-serif text-xl sm:text-2xl font-normal">
-              KnowledgeOps Copilot
-            </h3>
-            <div class="flex items-center gap-4 text-xs font-mono">
-              <a href="https://github.com/bachusaketh/KnowledgeOps" target="_blank" rel="noopener noreferrer" class="editorial-link">Source ↗</a>
-              <button type="button" onclick="openArticle('rag-qdrant')" class="editorial-link text-ink-mutedLight dark:text-ink-mutedDark cursor-pointer">
-                Architecture Note →
-              </button>
-            </div>
-          </div>
-
-          <p class="text-sm sm:text-[15px] leading-relaxed text-ink-mutedLight dark:text-ink-mutedDark mb-4">
-            End-to-end production Retrieval-Augmented Generation (RAG) and agentic tool-calling platform. Combines semantic dense-vector retrieval in Qdrant with structured OpenAI Responses API tool execution, containerized FastAPI orchestration, and reproducible AWS cloud provisioning via Terraform.
-          </p>
-
-          <div class="flex flex-wrap gap-1.5">
-            <span class="font-mono text-[11px] px-2.5 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800/90 text-ink-mutedLight dark:text-ink-mutedDark">Python</span>
-            <span class="font-mono text-[11px] px-2.5 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800/90 text-ink-mutedLight dark:text-ink-mutedDark">FastAPI</span>
-            <span class="font-mono text-[11px] px-2.5 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800/90 text-ink-mutedLight dark:text-ink-mutedDark">Qdrant</span>
-            <span class="font-mono text-[11px] px-2.5 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800/90 text-ink-mutedLight dark:text-ink-mutedDark">OpenAI Responses API</span>
-            <span class="font-mono text-[11px] px-2.5 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800/90 text-ink-mutedLight dark:text-ink-mutedDark">Docker</span>
-            <span class="font-mono text-[11px] px-2.5 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800/90 text-ink-mutedLight dark:text-ink-mutedDark">AWS Terraform</span>
-          </div>
-        </div>
-
-        <!-- Project 2: Auth API -->
-        <div class="p-5 sm:p-6 rounded-xl border border-rule-light dark:border-rule-dark bg-white/60 dark:bg-zinc-900/40 hover:border-zinc-400 dark:hover:border-zinc-700 transition-colors">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
-            <h3 class="font-serif text-xl sm:text-2xl font-normal">
-              Auth API — Identity &amp; RBAC Service
-            </h3>
-            <div class="flex items-center gap-4 text-xs font-mono">
-              <a href="https://github.com/bachusaketh/auth-api" target="_blank" rel="noopener noreferrer" class="editorial-link">Source ↗</a>
-              <button type="button" onclick="openArticle('jwt-rbac')" class="editorial-link text-ink-mutedLight dark:text-ink-mutedDark cursor-pointer">
-                Design Note →
-              </button>
-            </div>
-          </div>
-
-          <p class="text-sm sm:text-[15px] leading-relaxed text-ink-mutedLight dark:text-ink-mutedDark mb-4">
-            High-throughput authentication and authorization microservice engineered for multi-service ecosystems. Implements short-lived access tokens with refresh token rotation, granular Role-Based Access Control (RBAC) policy enforcement, and async PostgreSQL persistence deployed on Render.
-          </p>
-
-          <div class="flex flex-wrap gap-1.5">
-            <span class="font-mono text-[11px] px-2.5 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800/90 text-ink-mutedLight dark:text-ink-mutedDark">Python</span>
-            <span class="font-mono text-[11px] px-2.5 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800/90 text-ink-mutedLight dark:text-ink-mutedDark">FastAPI</span>
-            <span class="font-mono text-[11px] px-2.5 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800/90 text-ink-mutedLight dark:text-ink-mutedDark">PostgreSQL</span>
-            <span class="font-mono text-[11px] px-2.5 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800/90 text-ink-mutedLight dark:text-ink-mutedDark">JWT Rotation</span>
-            <span class="font-mono text-[11px] px-2.5 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800/90 text-ink-mutedLight dark:text-ink-mutedDark">RBAC</span>
-            <span class="font-mono text-[11px] px-2.5 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800/90 text-ink-mutedLight dark:text-ink-mutedDark">Render</span>
-          </div>
-        </div>
-
-        <!-- Project 3: E-commerce Backend API -->
-        <div class="p-5 sm:p-6 rounded-xl border border-rule-light dark:border-rule-dark bg-white/60 dark:bg-zinc-900/40 hover:border-zinc-400 dark:hover:border-zinc-700 transition-colors">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
-            <h3 class="font-serif text-xl sm:text-2xl font-normal">
-              Enterprise E-Commerce Backend Engine
-            </h3>
-            <div class="flex items-center gap-4 text-xs font-mono">
-              <a href="https://github.com/bachusaketh/Ecommerce-Sales-Dashboard" target="_blank" rel="noopener noreferrer" class="editorial-link">Source ↗</a>
-            </div>
-          </div>
-
-          <p class="text-sm sm:text-[15px] leading-relaxed text-ink-mutedLight dark:text-ink-mutedDark mb-4">
-            Transactional RESTful commerce backend built on Java 17/21 and Spring Boot. Handles normalized product catalog indexing, Redis read-through caching, atomic inventory and order state transitions, relational MySQL persistence, and Spring Security JWT filter chains.
-          </p>
-
-          <div class="flex flex-wrap gap-1.5">
-            <span class="font-mono text-[11px] px-2.5 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800/90 text-ink-mutedLight dark:text-ink-mutedDark">Java 17 / 21</span>
-            <span class="font-mono text-[11px] px-2.5 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800/90 text-ink-mutedLight dark:text-ink-mutedDark">Spring Boot</span>
-            <span class="font-mono text-[11px] px-2.5 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800/90 text-ink-mutedLight dark:text-ink-mutedDark">MySQL</span>
-            <span class="font-mono text-[11px] px-2.5 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800/90 text-ink-mutedLight dark:text-ink-mutedDark">Redis</span>
-            <span class="font-mono text-[11px] px-2.5 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800/90 text-ink-mutedLight dark:text-ink-mutedDark">Spring Security</span>
-            <span class="font-mono text-[11px] px-2.5 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800/90 text-ink-mutedLight dark:text-ink-mutedDark">JWT</span>
-          </div>
-        </div>
-
-        <!-- Project 4: Harvestify -->
-        <div class="p-5 sm:p-6 rounded-xl border border-rule-light dark:border-rule-dark bg-white/60 dark:bg-zinc-900/40 hover:border-zinc-400 dark:hover:border-zinc-700 transition-colors">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
-            <h3 class="font-serif text-xl sm:text-2xl font-normal">
-              Harvestify — ML Agricultural Decision System
-            </h3>
-            <div class="flex items-center gap-4 text-xs font-mono">
-              <a href="https://github.com/bachusaketh/Smart-Farming" target="_blank" rel="noopener noreferrer" class="editorial-link">Source ↗</a>
-            </div>
-          </div>
-
-          <p class="text-sm sm:text-[15px] leading-relaxed text-ink-mutedLight dark:text-ink-mutedDark mb-4">
-            Full-stack machine learning inference application powered by XGBoost and Random Forest ensembles delivering real-time crop recommendations and yield forecasting from soil telemetry and weather inputs. Packaged as Docker containers and deployed on AWS EC2.
-          </p>
-
-          <div class="flex flex-wrap gap-1.5">
-            <span class="font-mono text-[11px] px-2.5 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800/90 text-ink-mutedLight dark:text-ink-mutedDark">Python</span>
-            <span class="font-mono text-[11px] px-2.5 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800/90 text-ink-mutedLight dark:text-ink-mutedDark">Flask</span>
-            <span class="font-mono text-[11px] px-2.5 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800/90 text-ink-mutedLight dark:text-ink-mutedDark">XGBoost / Random Forest</span>
-            <span class="font-mono text-[11px] px-2.5 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800/90 text-ink-mutedLight dark:text-ink-mutedDark">React</span>
-            <span class="font-mono text-[11px] px-2.5 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800/90 text-ink-mutedLight dark:text-ink-mutedDark">Docker</span>
-            <span class="font-mono text-[11px] px-2.5 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800/90 text-ink-mutedLight dark:text-ink-mutedDark">AWS EC2</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- WRITING & ENGINEERING NOTES (/blog/ EQUIVALENT) -->
-    <section id="writing" class="py-14 sm:py-16 border-b border-rule-light dark:border-rule-dark scroll-mt-8">
-      <div class="flex items-baseline justify-between mb-9">
-        <h2 class="font-mono text-xs uppercase tracking-[0.14em] text-ink-mutedLight dark:text-ink-mutedDark">
-          03 / Engineering Notes
-        </h2>
-        <span class="font-mono text-xs text-ink-mutedLight dark:text-ink-mutedDark">
-          Click any essay to read
-        </span>
-      </div>
-
-      <div class="divide-y divide-rule-light dark:divide-rule-dark border-t border-b border-rule-light dark:border-rule-dark">
-        <!-- Essay 1 -->
-        <button
-          type="button"
-          onclick="openArticle('rag-qdrant')"
-          class="w-full text-left py-5 flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 group cursor-pointer"
-        >
-          <div>
-            <h3 class="font-serif text-lg sm:text-xl group-hover:underline underline-offset-4 decoration-zinc-400">
-              Designing Production RAG Pipelines: Vector Chunking &amp; Retrieval in Qdrant
-            </h3>
-            <p class="text-xs sm:text-sm text-ink-mutedLight dark:text-ink-mutedDark mt-1">
-              Why naive fixed-size splitting degrades recall, and how metadata payload filtering stabilizes latency.
-            </p>
-          </div>
-          <span class="font-mono text-xs text-ink-mutedLight dark:text-ink-mutedDark shrink-0">
-            5 min read →
+      <!-- 00 / OVERVIEW -->
+      <section class="pb-14 border-b border-white/10 scroll-mt-10">
+        <div class="flex flex-wrap items-center justify-between gap-4 mb-5">
+          <span class="font-mono text-xs uppercase tracking-[0.14em] text-slate-400">
+            00 / Overview
           </span>
-        </button>
-
-        <!-- Essay 2 -->
-        <button
-          type="button"
-          onclick="openArticle('jwt-rbac')"
-          class="w-full text-left py-5 flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 group cursor-pointer"
-        >
-          <div>
-            <h3 class="font-serif text-lg sm:text-xl group-hover:underline underline-offset-4 decoration-zinc-400">
-              Stateless JWT Rotation &amp; Granular RBAC Patterns in FastAPI
-            </h3>
-            <p class="text-xs sm:text-sm text-ink-mutedLight dark:text-ink-mutedDark mt-1">
-              Balancing zero-lookup token verification with immediate session revocation and dependency-injected scopes.
-            </p>
+          <div class="flex items-center gap-5 text-xs font-mono text-slate-300">
+            <a href="https://github.com/bachusaketh" target="_blank" rel="noopener noreferrer" class="editorial-link">GitHub ↗</a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="editorial-link">LinkedIn ↗</a>
           </div>
-          <span class="font-mono text-xs text-ink-mutedLight dark:text-ink-mutedDark shrink-0">
-            4 min read →
-          </span>
-        </button>
-
-        <!-- Essay 3 -->
-        <button
-          type="button"
-          onclick="openArticle('langgraph-agents')"
-          class="w-full text-left py-5 flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 group cursor-pointer"
-        >
-          <div>
-            <h3 class="font-serif text-lg sm:text-xl group-hover:underline underline-offset-4 decoration-zinc-400">
-              Designing Deterministic Tool-Calling Loops in LangGraph
-            </h3>
-            <p class="text-xs sm:text-sm text-ink-mutedLight dark:text-ink-mutedDark mt-1">
-              Enforcing explicit state machines, bounded schema-repair retries, and human-in-the-loop checkpoints.
-            </p>
-          </div>
-          <span class="font-mono text-xs text-ink-mutedLight dark:text-ink-mutedDark shrink-0">
-            6 min read →
-          </span>
-        </button>
-      </div>
-    </section>
-
-    <!-- TECHNICAL STACK & CREDENTIALS -->
-    <section id="stack" class="py-14 sm:py-16 border-b border-rule-light dark:border-rule-dark scroll-mt-8">
-        <h2 class="font-mono text-xs uppercase tracking-[0.14em] text-ink-mutedLight dark:text-ink-mutedDark">
-          04 / Technical Stack &amp; Credentials
-        </h2>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 text-sm">
-        <div>
-          <h3 class="font-mono text-xs uppercase tracking-wider text-ink-mutedLight dark:text-ink-mutedDark mb-2.5">
-            Languages
-          </h3>
-          <p class="leading-relaxed">
-            Python, Java (17 / 21), JavaScript (ES6+), C++, SQL
-          </p>
         </div>
 
-        <div>
-          <h3 class="font-mono text-xs uppercase tracking-wider text-ink-mutedLight dark:text-ink-mutedDark mb-2.5">
-            Backend &amp; AI Frameworks
-          </h3>
-          <p class="leading-relaxed">
-            FastAPI, Spring Boot, Flask, LangChain, LangGraph, Qdrant, React.js
-          </p>
-        </div>
+        <p class="font-serif text-xl sm:text-2xl leading-relaxed text-slate-100">
+          I’m a Backend &amp; AI Systems Engineer focused on turning probabilistic language models and distributed services into dependable production software. B.Tech in Computer Science (AI &amp; ML) graduate from Mahatma Gandhi Institute of Technology (MGIT), Hyderabad (<span class="text-white font-normal">8.38 CGPA</span>).
+        </p>
+      </section>
 
-        <div>
-          <h3 class="font-mono text-xs uppercase tracking-wider text-ink-mutedLight dark:text-ink-mutedDark mb-2.5">
-            Databases, Cloud &amp; DevOps
-          </h3>
-          <p class="leading-relaxed">
-            PostgreSQL, MySQL, MongoDB, Redis, Docker, Jenkins, AWS, Terraform
-          </p>
-        </div>
-
-        <div>
-          <h3 class="font-mono text-xs uppercase tracking-wider text-ink-mutedLight dark:text-ink-mutedDark mb-2.5">
-            Education &amp; Certifications
-          </h3>
-          <ul class="space-y-1.5 leading-relaxed">
-            <li>B.Tech CSE (AI &amp; ML), MGIT — <span class="font-mono text-xs">8.38 CGPA (2025)</span></li>
-            <li>Wipro TalentNext Java Full Stack Certified</li>
-            <li>Cisco Computer Networks Fundamentals</li>
-            <li>Smart India Hackathon (SIH) 2024 Participant</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- MINIMALIST EXECUTIVE FOOTER -->
-    <footer class="pt-14 sm:pt-16">
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-6">
-        <div>
-          <h2 class="font-serif text-2xl sm:text-3xl font-normal mb-2">
-            Let’s build reliable systems.
+      <!-- 01 / EXPERIENCE -->
+      <section id="experience" class="py-14 sm:py-16 border-b border-white/10 scroll-mt-10">
+        <div class="flex items-baseline justify-between mb-8">
+          <h2 class="font-mono text-xs uppercase tracking-[0.14em] text-slate-400">
+            01 / Experience
           </h2>
-          <p class="text-sm text-ink-mutedLight dark:text-ink-mutedDark max-w-md">
-            Available for backend engineering, distributed systems, and applied GenAI roles.
-          </p>
-        </div>
-
-        <div class="flex flex-col sm:items-end gap-3">
-          <div class="flex items-center gap-2">
-            <code id="email-text" class="font-mono text-xs sm:text-sm px-3 py-1.5 rounded-lg border border-rule-light dark:border-rule-dark bg-zinc-100/70 dark:bg-zinc-900">
-              sakethbachu8@gmail.com
-            </code>
-            <button
-              id="copy-email-footer"
-              type="button"
-              class="px-3 py-1.5 rounded-lg text-xs font-medium border border-rule-light dark:border-rule-dark hover:bg-zinc-200/60 dark:hover:bg-zinc-800 transition-colors cursor-pointer"
-            >
-              Copy
-            </button>
-          </div>
-          <span class="font-mono text-[11px] text-ink-mutedLight dark:text-ink-mutedDark">
-            Update placeholder email &amp; social URLs in index.html before deploying
+          <span class="font-mono text-xs text-slate-400">
+            2024 — 2026
           </span>
         </div>
-      </div>
 
-      <div class="mt-12 pt-6 border-t border-rule-light dark:border-rule-dark flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-ink-mutedLight dark:text-ink-mutedDark">
-        <span>© 2026 Batchu Saketh. Built with zero framework bloat.</span>
-        <div class="flex items-center gap-5">
-          <a href="https://github.com/bachusaketh" target="_blank" rel="noopener noreferrer" class="hover:text-ink-light dark:hover:text-ink-dark">GitHub</a>
-          <a href="https://linkedin.com/in/bachu-saketh-331275281" target="_blank" rel="noopener noreferrer" class="hover:text-ink-light dark:hover:text-ink-dark">LinkedIn</a>
-          <a href="#top" class="hover:text-ink-light dark:hover:text-ink-dark">Back to top ↑</a>
+        <div class="space-y-6">
+          <!-- Role 1: LTIMindtree -->
+          <article class="bento-glass rounded-2xl p-5 sm:p-6">
+            <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 mb-2.5">
+              <h3 class="text-base sm:text-lg font-medium text-white">
+                Graduate Engineer Trainee <span class="text-slate-400 font-normal">- LTIMindtree, Mumbai</span>
+              </h3>
+              <span class="font-mono text-xs text-[#ff6347] shrink-0">
+                Dec 2025 – Jan 2026
+              </span>
+            </div>
+            <p class="text-sm sm:text-[15px] leading-relaxed text-slate-300">
+              Completed intensive enterprise software engineering onboarding covering Core Java, Collections, relational database design, REST API contracts, and Android application architecture under production delivery standards.
+            </p>
+          </article>
+
+          <!-- Role 2: Wipro -->
+          <article class="bento-glass rounded-2xl p-5 sm:p-6">
+            <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 mb-2.5">
+              <h3 class="text-base sm:text-lg font-medium text-white">
+                Java Full Stack Engineer Intern <span class="text-slate-400 font-normal">- Wipro, Hyderabad</span>
+              </h3>
+              <span class="font-mono text-xs text-slate-400 shrink-0">
+                May 2024 – Oct 2024
+              </span>
+            </div>
+            <p class="text-sm sm:text-[15px] leading-relaxed text-slate-300">
+              Built 4 Spring Boot microservices (User, Product, Order, Payment) integrated with React.js interfaces and achieved 98% JUnit test coverage. Cut product-listing API latency by <span class="text-white font-medium">68% (800ms → 250ms)</span> using composite database indexes and Redis read-through caching, and automated deployments via Jenkins CI/CD pipelines.
+            </p>
+          </article>
+
+          <!-- Role 3: YBI Foundation -->
+          <article class="bento-glass rounded-2xl p-5 sm:p-6">
+            <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 mb-2.5">
+              <h3 class="text-base sm:text-lg font-medium text-white">
+                AI/ML Intern <span class="text-slate-400 font-normal">- YBI Foundation, Remote</span>
+              </h3>
+              <span class="font-mono text-xs text-slate-400 shrink-0">
+                May 2024 – Jun 2024
+              </span>
+            </div>
+            <p class="text-sm sm:text-[15px] leading-relaxed text-slate-300">
+              Trained and benchmarked Linear Regression, Random Forest, and XGBoost models across 5,000+ agricultural records, serving predictions via Flask REST endpoints at <span class="text-white font-medium">&lt;200ms inference latency</span> alongside 8 interactive feature-importance visualizations.
+            </p>
+          </article>
         </div>
-      </div>
-    </footer>
-  </main>
+      </section>
 
-  <!-- INTERACTIVE ENGINEERING NOTE READER MODAL -->
+      <!-- 02 / SELECTED SYSTEMS -->
+      <section id="systems" class="py-14 sm:py-16 border-b border-white/10 scroll-mt-10">
+        <div class="flex items-baseline justify-between mb-8">
+          <h2 class="font-mono text-xs uppercase tracking-[0.14em] text-slate-400">
+            02 / Selected Systems
+          </h2>
+          <span class="font-mono text-xs text-slate-400">
+            Production &amp; Reference Architectures
+          </span>
+        </div>
+
+        <div class="space-y-6">
+          <!-- System 1: Rules-as-Code Eligibility Agent -->
+          <article class="bento-glass rounded-2xl p-5 sm:p-7">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+              <h3 class="font-serif text-xl sm:text-2xl font-normal text-white">
+                Rules-as-Code Eligibility Agent
+              </h3>
+              <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+                <a href="https://github.com/bachusaketh/" target="_blank" rel="noopener noreferrer" class="editorial-link">Source ↗</a>
+                <button type="button" onclick="openArticle('rules-as-code')" class="editorial-link text-[#ff6347] border-[#ff6347]/50 cursor-pointer">
+                  Architecture Note →
+                </button>
+              </div>
+            </div>
+
+            <p class="text-sm sm:text-[15px] leading-relaxed text-slate-300 mb-4">
+              Hybrid neuro-symbolic backend evaluating citizen eligibility across 10 central and Telangana government welfare schemes from code-mixed Telugu-English and Hinglish inputs. Pairs structured LLM slot extraction with deterministic three-valued logic, MCP tool orchestration, and property-based <code class="font-mono text-xs text-slate-200 bg-white/5 px-1.5 py-0.5 rounded">pytest</code> verification suites so policy decisions remain auditable and hallucination-free.
+            </p>
+
+            <div class="flex flex-wrap gap-1.5">
+              <span class="font-mono text-[11px] px-2.5 py-1 rounded-md bg-white/[0.05] border border-white/10 text-slate-300">Python</span>
+              <span class="font-mono text-[11px] px-2.5 py-1 rounded-md bg-white/[0.05] border border-white/10 text-slate-300">FastAPI</span>
+              <span class="font-mono text-[11px] px-2.5 py-1 rounded-md bg-white/[0.05] border border-white/10 text-slate-300">LangGraph</span>
+              <span class="font-mono text-[11px] px-2.5 py-1 rounded-md bg-white/[0.05] border border-white/10 text-slate-300">Pydantic</span>
+              <span class="font-mono text-[11px] px-2.5 py-1 rounded-md bg-white/[0.05] border border-white/10 text-slate-300">PostgreSQL</span>
+              <span class="font-mono text-[11px] px-2.5 py-1 rounded-md bg-white/[0.05] border border-white/10 text-slate-300">MCP Tools</span>
+              <span class="font-mono text-[11px] px-2.5 py-1 rounded-md bg-white/[0.05] border border-white/10 text-slate-300">Pytest</span>
+            </div>
+          </article>
+
+          <!-- System 2: Auth API -->
+          <article class="bento-glass rounded-2xl p-5 sm:p-7">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+              <h3 class="font-serif text-xl sm:text-2xl font-normal text-white">
+                Auth API - Identity &amp; RBAC Service
+              </h3>
+              <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+                <a href="https://github.com/bachusaketh/auth-api" target="_blank" rel="noopener noreferrer" class="editorial-link">Source ↗</a>
+                <button type="button" onclick="openArticle('jwt-rbac')" class="editorial-link text-[#ff6347] border-[#ff6347]/50 cursor-pointer">
+                  Architecture Note →
+                </button>
+              </div>
+            </div>
+
+            <p class="text-sm sm:text-[15px] leading-relaxed text-slate-300 mb-4">
+              Modular FastAPI authentication and authorization microservice engineered for multi-service ecosystems. Implements stateless JWT issuance (<code class="font-mono text-xs text-slate-200 bg-white/5 px-1.5 py-0.5 rounded">python-jose</code>), bcrypt credential hashing, strict Pydantic schema validation, granular Role-Based Access Control (RBAC), and async PostgreSQL/SQLAlchemy persistence.
+            </p>
+
+            <div class="flex flex-wrap gap-1.5">
+              <span class="font-mono text-[11px] px-2.5 py-1 rounded-md bg-white/[0.05] border border-white/10 text-slate-300">Python</span>
+              <span class="font-mono text-[11px] px-2.5 py-1 rounded-md bg-white/[0.05] border border-white/10 text-slate-300">FastAPI</span>
+              <span class="font-mono text-[11px] px-2.5 py-1 rounded-md bg-white/[0.05] border border-white/10 text-slate-300">PostgreSQL</span>
+              <span class="font-mono text-[11px] px-2.5 py-1 rounded-md bg-white/[0.05] border border-white/10 text-slate-300">SQLAlchemy</span>
+              <span class="font-mono text-[11px] px-2.5 py-1 rounded-md bg-white/[0.05] border border-white/10 text-slate-300">JWT / RBAC</span>
+              <span class="font-mono text-[11px] px-2.5 py-1 rounded-md bg-white/[0.05] border border-white/10 text-slate-300">Bcrypt</span>
+            </div>
+          </article>
+
+          <!-- System 3: KnowledgeOps Copilot -->
+          <article class="bento-glass rounded-2xl p-5 sm:p-7">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+              <h3 class="font-serif text-xl sm:text-2xl font-normal text-white">
+                KnowledgeOps Copilot — Production RAG &amp; Agentic Retrieval
+              </h3>
+              <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+                <a href="https://github.com/bachusaketh" target="_blank" rel="noopener noreferrer" class="editorial-link">Source ↗</a>
+                <button type="button" onclick="openArticle('qdrant-rag')" class="editorial-link text-[#ff6347] border-[#ff6347]/50 cursor-pointer">
+                  Architecture Note →
+                </button>
+              </div>
+            </div>
+
+            <p class="text-sm sm:text-[15px] leading-relaxed text-slate-300 mb-4">
+              Production Retrieval-Augmented Generation and agentic knowledge retrieval system for engineering runbooks and technical documentation. Combines structure-aware semantic chunking, Qdrant vector search with payload metadata filtering, and LLM tool-calling with verifiable inline citations—containerized with Docker and provisioned on AWS via Terraform.
+            </p>
+
+            <div class="flex flex-wrap gap-1.5">
+              <span class="font-mono text-[11px] px-2.5 py-1 rounded-md bg-white/[0.05] border border-white/10 text-slate-300">Python</span>
+              <span class="font-mono text-[11px] px-2.5 py-1 rounded-md bg-white/[0.05] border border-white/10 text-slate-300">FastAPI</span>
+              <span class="font-mono text-[11px] px-2.5 py-1 rounded-md bg-white/[0.05] border border-white/10 text-slate-300">Qdrant</span>
+              <span class="font-mono text-[11px] px-2.5 py-1 rounded-md bg-white/[0.05] border border-white/10 text-slate-300">LLM Tool-Calling</span>
+              <span class="font-mono text-[11px] px-2.5 py-1 rounded-md bg-white/[0.05] border border-white/10 text-slate-300">Docker</span>
+              <span class="font-mono text-[11px] px-2.5 py-1 rounded-md bg-white/[0.05] border border-white/10 text-slate-300">Terraform / AWS</span>
+            </div>
+          </article>
+
+          <!-- System 4: Harvestify -->
+          <article class="bento-glass rounded-2xl p-5 sm:p-7">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+              <h3 class="font-serif text-xl sm:text-2xl font-normal text-white">
+                Harvestify — Agricultural Yield Prediction Platform
+              </h3>
+              <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+                <a href="https://github.com/bachusaketh" target="_blank" rel="noopener noreferrer" class="editorial-link">Source ↗</a>
+              </div>
+            </div>
+
+            <p class="text-sm sm:text-[15px] leading-relaxed text-slate-300 mb-4">
+              End-to-end machine learning inference platform powered by a Scikit-learn Random Forest model (<span class="text-white font-medium">R² = 0.89</span>) forecasting crop yields from soil and meteorological telemetry. Served via Flask REST APIs with interactive React &amp; Plotly analytics, containerized with Docker on AWS EC2.
+            </p>
+
+            <div class="flex flex-wrap gap-1.5">
+              <span class="font-mono text-[11px] px-2.5 py-1 rounded-md bg-white/[0.05] border border-white/10 text-slate-300">Python</span>
+              <span class="font-mono text-[11px] px-2.5 py-1 rounded-md bg-white/[0.05] border border-white/10 text-slate-300">Scikit-learn</span>
+              <span class="font-mono text-[11px] px-2.5 py-1 rounded-md bg-white/[0.05] border border-white/10 text-slate-300">Flask</span>
+              <span class="font-mono text-[11px] px-2.5 py-1 rounded-md bg-white/[0.05] border border-white/10 text-slate-300">React &amp; Plotly</span>
+              <span class="font-mono text-[11px] px-2.5 py-1 rounded-md bg-white/[0.05] border border-white/10 text-slate-300">Docker</span>
+              <span class="font-mono text-[11px] px-2.5 py-1 rounded-md bg-white/[0.05] border border-white/10 text-slate-300">AWS EC2</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 03 / ENGINEERING NOTES -->
+      <section id="writing" class="py-14 sm:py-16 border-b border-white/10 scroll-mt-10">
+        <div class="flex items-baseline justify-between mb-8">
+          <h2 class="font-mono text-xs uppercase tracking-[0.14em] text-slate-400">
+            03 / Engineering Notes
+          </h2>
+          <span class="font-mono text-xs text-slate-400">
+            Select an essay to read
+          </span>
+        </div>
+
+        <div class="space-y-3">
+          <!-- Note 1 -->
+          <button
+            type="button"
+            onclick="openArticle('rules-as-code')"
+            class="w-full text-left bento-glass rounded-xl p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 group cursor-pointer"
+          >
+            <div>
+              <div class="font-mono text-[11px] text-[#ff6347] mb-1">
+                Nov 2026 · Neuro-Symbolic AI &amp; Agents
+              </div>
+              <h3 class="font-serif text-lg sm:text-xl text-white group-hover:text-[#ff6347] transition-colors">
+                Deterministic Rules-as-Code with LangGraph &amp; MCP Tools
+              </h3>
+              <p class="text-xs sm:text-sm text-slate-400 mt-1">
+                Eliminating policy hallucinations by pairing LLM slot extraction with three-valued logic and property-based tests.
+              </p>
+            </div>
+            <span class="font-mono text-xs text-slate-300 group-hover:text-white shrink-0">
+              6 min read →
+            </span>
+          </button>
+
+          <!-- Note 2 -->
+          <button
+            type="button"
+            onclick="openArticle('redis-latency')"
+            class="w-full text-left bento-glass rounded-xl p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 group cursor-pointer"
+          >
+            <div>
+              <div class="font-mono text-[11px] text-slate-400 mb-1">
+                Sep 2026 · Distributed Systems &amp; Performance
+              </div>
+              <h3 class="font-serif text-lg sm:text-xl text-white group-hover:text-[#ff6347] transition-colors">
+                Cutting API Latency by 68% with Composite Indexes &amp; Redis
+              </h3>
+              <p class="text-xs sm:text-sm text-slate-400 mt-1">
+                Diagnosing N+1 catalog scans in Spring Boot and designing safe cache-aside invalidation under write load.
+              </p>
+            </div>
+            <span class="font-mono text-xs text-slate-300 group-hover:text-white shrink-0">
+              5 min read →
+            </span>
+          </button>
+
+          <!-- Note 3 -->
+          <button
+            type="button"
+            onclick="openArticle('jwt-rbac')"
+            class="w-full text-left bento-glass rounded-xl p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 group cursor-pointer"
+          >
+            <div>
+              <div class="font-mono text-[11px] text-slate-400 mb-1">
+                Jul 2026 · Backend Security
+              </div>
+              <h3 class="font-serif text-lg sm:text-xl text-white group-hover:text-[#ff6347] transition-colors">
+                Stateless JWT &amp; Granular RBAC Architecture in FastAPI
+              </h3>
+              <p class="text-xs sm:text-sm text-slate-400 mt-1">
+                Structuring clean dependency-injected permission guards, bcrypt password policies, and async SQLAlchemy sessions.
+              </p>
+            </div>
+            <span class="font-mono text-xs text-slate-300 group-hover:text-white shrink-0">
+              4 min read →
+            </span>
+          </button>
+        </div>
+      </section>
+
+      <!-- 04 / CONTACT & FOOTER -->
+      <footer id="contact" class="pt-14 sm:pt-16 scroll-mt-10">
+        <div class="bento-glass rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+          <div>
+            <span class="font-mono text-xs uppercase tracking-[0.14em] text-[#ff6347] block mb-2">
+              04 / Contact
+            </span>
+            <h2 class="font-serif text-2xl sm:text-3xl font-normal text-white mb-2">
+              Let’s build reliable systems.
+            </h2>
+            <p class="text-sm text-slate-300 max-w-md">
+              Open to Backend Engineering, Distributed Systems, and Applied AI roles. Reach out directly via email or GitHub.
+            </p>
+          </div>
+
+          <div class="flex flex-col sm:items-end gap-3 shrink-0">
+            <div class="flex items-center gap-2">
+              <code id="email-text" class="font-mono text-xs sm:text-sm px-3.5 py-2 rounded-xl bg-white/[0.06] border border-white/15 text-white">
+                sakethbachu8@gmail.com
+              </code>
+              <button
+                id="copy-email-footer"
+                type="button"
+                class="px-4 py-2 rounded-xl text-xs font-medium bg-[#ff6347] hover:bg-[#ff5233] text-white shadow-md shadow-[#ff6347]/20 transition-colors cursor-pointer"
+              >
+                Copy
+              </button>
+            </div>
+
+            <div class="flex items-center gap-4 text-xs font-mono text-slate-300">
+              <a href="mailto:sakethbachu8@gmail.com" class="editorial-link">Direct Mail ↗</a>
+              <a href="https://github.com/bachusaketh" target="_blank" rel="noopener noreferrer" class="editorial-link">GitHub ↗</a>
+              <a href="https://linkedin.com/in/bachu-saketh-331275281" target="_blank" rel="noopener noreferrer" class="editorial-link">LinkedIn ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-10 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-slate-400">
+          <span>© 2026 Bachu Saketh. Hyderabad, India.</span>
+          <a href="#top" class="hover:text-white transition-colors">Back to top ↑</a>
+        </div>
+      </footer>
+
+    </main>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- DISTRACTION-FREE FROSTED-GLASS ENGINEERING NOTE READER MODAL          -->
+  <!-- ===================================================================== -->
   <div
     id="article-modal"
-    class="fixed inset-0 z-50 hidden items-center justify-center p-4 sm:p-6 bg-zinc-950/60 backdrop-blur-sm"
+    class="fixed inset-0 z-50 hidden items-center justify-center p-4 sm:p-6 bg-[#060b14]/80 backdrop-blur-md"
     role="dialog"
     aria-modal="true"
     aria-labelledby="modal-title"
   >
-    <div class="relative w-full max-w-[720px] max-h-[88vh] flex flex-col rounded-2xl border border-rule-light dark:border-rule-dark bg-paper-light dark:bg-paper-dark shadow-2xl overflow-hidden">
-      <!-- Reader Top Bar -->
-      <div class="flex items-center justify-between px-6 py-4 border-b border-rule-light dark:border-rule-dark">
-        <span id="modal-meta" class="font-mono text-xs text-ink-mutedLight dark:text-ink-mutedDark">
+    <div class="relative w-full max-w-[740px] max-h-[88vh] flex flex-col rounded-2xl border border-white/15 bg-[#0e1726]/95 shadow-2xl overflow-hidden">
+      <!-- Reader Header -->
+      <div class="flex items-center justify-between px-6 py-4 border-b border-white/10">
+        <span id="modal-meta" class="font-mono text-xs text-[#ff6347]">
           ENGINEERING NOTE
         </span>
         <button
           id="close-modal"
           type="button"
-          class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-mono border border-rule-light dark:border-rule-dark hover:bg-zinc-200/60 dark:hover:bg-zinc-800 transition-colors cursor-pointer"
+          class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-mono border border-white/15 text-slate-300 hover:text-white hover:bg-white/10 transition-colors cursor-pointer"
         >
           <span>Close</span>
           <span>✕</span>
         </button>
       </div>
 
-      <!-- Scrollable Essay Content -->
+      <!-- Scrollable Essay Body -->
       <div class="p-6 sm:p-10 overflow-y-auto reader-scroll">
-        <h2 id="modal-title" class="font-serif text-2xl sm:text-3xl font-normal leading-snug mb-6"></h2>
-        <div id="modal-body" class="article-prose text-sm sm:text-base text-ink-light/90 dark:text-ink-dark/90"></div>
+        <h2 id="modal-title" class="font-serif text-2xl sm:text-3xl font-normal leading-snug text-white mb-6"></h2>
+        <div id="modal-body" class="article-prose text-sm sm:text-base"></div>
       </div>
     </div>
   </div>
 
-  <!-- NON-INTRUSIVE TOAST NOTIFICATION -->
+  <!-- TOAST FEEDBACK NOTIFICATION -->
   <div
     id="toast"
-    class="fixed bottom-5 right-5 z-50 translate-y-16 opacity-0 pointer-events-none transition-all duration-300 px-4 py-2.5 rounded-xl bg-zinc-900 text-zinc-50 dark:bg-zinc-100 dark:text-zinc-900 font-mono text-xs shadow-lg"
+    class="fixed bottom-5 right-5 z-50 translate-y-16 opacity-0 pointer-events-none transition-all duration-300 px-4 py-2.5 rounded-xl bg-[#ff6347] text-white font-mono text-xs shadow-xl"
   >
     Copied email to clipboard
   </div>
 
-  <!-- APPLICATION LOGIC (THEME, CLIPBOARD, ARTICLE READER) -->
+  <!-- ===================================================================== -->
+  <!-- INTERACTIVE SCRIPT (CLIPBOARD TOAST & ARTICLE READER MODAL)           -->
+  <!-- ===================================================================== -->
   <script>
-    // 1. Dark / Light Theme Management
-    const htmlEl = document.documentElement;
-    const themeToggleBtn = document.getElementById('theme-toggle');
-    const iconSun = document.getElementById('icon-sun');
-    const iconMoon = document.getElementById('icon-moon');
-
-    function applyTheme(theme) {
-      if (theme === 'dark') {
-        htmlEl.classList.add('dark');
-        iconSun.classList.remove('hidden');
-        iconMoon.classList.add('hidden');
-      } else {
-        htmlEl.classList.remove('dark');
-        iconSun.classList.add('hidden');
-        iconMoon.classList.remove('hidden');
-      }
-    }
-
-    // Initialize theme from localStorage or OS preference
-    const savedTheme = localStorage.getItem('portfolio-theme');
-    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    applyTheme(savedTheme || (systemPrefersDark ? 'dark' : 'light'));
-
-    themeToggleBtn.addEventListener('click', () => {
-      const isDark = htmlEl.classList.contains('dark');
-      const nextTheme = isDark ? 'light' : 'dark';
-      localStorage.setItem('portfolio-theme', nextTheme);
-      applyTheme(nextTheme);
-    });
-
-    // 2. Reliable Copy-to-Clipboard with Toast Feedback
+    // 1. Copy-to-Clipboard with Toast Feedback (Iframe-safe execCommand + fallback)
     const toastEl = document.getElementById('toast');
     let toastTimeout;
 
@@ -795,65 +718,67 @@
       document.body.removeChild(tempInput);
     }
 
-    document.getElementById('copy-email-hero').addEventListener('click', copyEmailToClipboard);
+    document.getElementById('copy-email-nav').addEventListener('click', copyEmailToClipboard);
     document.getElementById('copy-email-footer').addEventListener('click', copyEmailToClipboard);
 
-    // 3. Static Editorial Articles Repository (Simulating /blog/*.html)
+    // 2. Engineering Notes Repository
     const articles = {
-      'rag-qdrant': {
-        meta: 'SYSTEMS & AI • 5 MIN READ',
-        title: 'Designing Production RAG Pipelines: Chunking & Retrieval Trade-offs in Qdrant',
+      'rules-as-code': {
+        meta: 'NEURO-SYMBOLIC AI & AGENTS · 6 MIN READ',
+        title: 'Deterministic Rules-as-Code with LangGraph & MCP Tools',
         body: `
-          <p>Most Retrieval-Augmented Generation prototypes fail in production not because the underlying foundation model lacks reasoning capability, but because retrieval delivers fragmented or context-starved passages.</p>
-          <h3>1. Structure-Aware Chunking Over Arbitrary Token Windows</h3>
-          <p>Splitting technical runbooks or API specifications every 512 tokens routinely severs code blocks from the preconditions that explain them. In <strong>KnowledgeOps Copilot</strong>, shifting to markdown-header and AST-aware splitting with a 15% semantic overlap improved top-3 recall while keeping context windows compact.</p>
-          <h3>2. Payload Indexing &amp; Pre-Filtering in Qdrant</h3>
-          <p>Running pure cosine similarity across an entire multi-tenant corpus introduces both noisy neighbors and unnecessary HNSW graph traversal. Attaching structured metadata payloads (service name, environment, document version) allows Qdrant to apply payload filters <em>during</em> graph search rather than post-filtering results.</p>
-          <pre class="bg-zinc-100 dark:bg-zinc-900 border border-rule-light dark:border-rule-dark"># Filtered semantic query pattern in Qdrant
-results = client.search(
-    collection_name="knowledge_ops_v2",
-    query_vector=embed(user_query),
-    query_filter=Filter(
-        must=[FieldCondition(key="service", match=MatchValue(value="auth-api"))]
-    ),
-    limit=5
-)</pre>
-          <h3>3. Grounded Citations &amp; Abstention</h3>
-          <p>When similarity scores fall below a calibrated threshold, the pipeline explicitly instructs the generator to abstain rather than hallucinate—turning silent failure modes into observable telemetry.</p>
+          <p>Asking a foundation model to directly judge whether a citizen qualifies for a government welfare scheme is an architectural anti-pattern. Subtle statutory thresholds—such as annual household income caps, landholding acreage, or caste/occupation exclusions—require exact boolean evaluation rather than probabilistic token prediction.</p>
+          <h3>1. Separating Language Parsing from Policy Evaluation</h3>
+          <p>In the <strong>Rules-as-Code Eligibility Agent</strong>, the LLM is restricted strictly to semantic slot extraction: normalizing code-mixed Telugu-English and Hinglish user utterances into typed <code>Pydantic</code> citizen profiles. Once structured facts are extracted, deterministic Python rule evaluators compute eligibility across 10 central and Telangana state schemes.</p>
+          <h3>2. Three-Valued Logic (True / False / Unknown)</h3>
+          <p>Real users rarely provide every required statutory attribute in their first message. Rather than guessing missing fields, each rule predicate evaluates under Kleene three-valued logic—returning <code>UNKNOWN</code> alongside the exact missing attribute keys so the LangGraph state machine asks targeted follow-up questions.</p>
+          <pre># Deterministic three-valued rule evaluation
+def evaluate_rythu_bandhu(profile: CitizenProfile) -> RuleOutcome:
+    if profile.is_land_owner is False:
+        return RuleOutcome(status="INELIGIBLE", reason="Requires agricultural land ownership")
+    if profile.is_land_owner is None or profile.acres is None:
+        return RuleOutcome(status="UNKNOWN", missing_fields=["is_land_owner", "acres"])
+    return RuleOutcome(status="ELIGIBLE" if profile.acres > 0 else "INELIGIBLE")</pre>
+          <h3>3. Property-Based Verification</h3>
+          <p>Because statutory rules are pure functions over Pydantic schemas, we verify boundary conditions (e.g., exact income cutoffs) with property-based <code>pytest</code> suites on every commit.</p>
+        `
+      },
+      'redis-latency': {
+        meta: 'DISTRIBUTED SYSTEMS & PERFORMANCE · 5 MIN READ',
+        title: 'Cutting API Latency by 68% with Composite Indexes & Redis',
+        body: `
+          <p>During load testing of our Spring Boot e-commerce catalog service, p95 response times degraded to 800ms under concurrent category and price-range filtering.</p>
+          <h3>1. Eliminating Filesorts with Composite Indexes</h3>
+          <p>Inspecting <code>EXPLAIN ANALYZE</code> revealed that MySQL was scanning filtered category rows and performing an external filesort on <code>created_at</code>. Adding a covering composite index aligned with our exact query predicate order eliminated the temporary sort pass immediately.</p>
+          <h3>2. Cache-Aside with TTL Jitter</h3>
+          <p>Hot catalog pages were moved behind a Redis cache-aside layer serialized as compact JSON payloads, with randomized TTL jitter (±15%) to prevent synchronized cache stampedes during flash-sale traffic bursts—bringing steady-state p95 latency down to <strong>250ms</strong>.</p>
+          <pre>// Cache-aside pattern with explicit invalidation on catalog mutation
+public Page&lt;ProductDTO&gt; getCatalogPage(String category, int page) {
+    String key = String.format("catalog:%s:p%d", category, page);
+    String cached = redisTemplate.opsForValue().get(key);
+    if (cached != null) {
+        return deserialize(cached);
+    }
+    Page&lt;ProductDTO&gt; fresh = productRepository.findActiveByCategory(category, PageRequest.of(page, 20));
+    redisTemplate.opsForValue().set(key, serialize(fresh), Duration.ofSeconds(300 + jitter()));
+    return fresh;
+}</pre>
         `
       },
       'jwt-rbac': {
-        meta: 'BACKEND SECURITY • 4 MIN READ',
-        title: 'Stateless JWT Rotation & Granular RBAC Patterns in FastAPI',
+        meta: 'BACKEND SECURITY · 4 MIN READ',
+        title: 'Stateless JWT & Granular RBAC Architecture in FastAPI',
         body: `
-          <p>Purely stateless JWT authentication simplifies horizontal scaling across microservices, yet creates a classic dilemma: how do you revoke compromised sessions immediately without turning every API request into a database round-trip?</p>
-          <h3>Dual-Token Lifecycle</h3>
-          <ul>
-            <li><strong>Short-Lived Access Tokens (15 min):</strong> Signed with asymmetric keys (RS256) carrying user identity and role scopes, verified purely in memory by downstream FastAPI services.</li>
-            <li><strong>Rotating Refresh Tokens (7 days):</strong> Persisted as hashed family records in PostgreSQL. Presenting an already-consumed refresh token invalidates the entire token family, neutralizing replay attacks.</li>
-          </ul>
-          <h3>Declarative Scope Enforcement</h3>
-          <p>Using FastAPI's dependency injection system, route handlers declare required permissions cleanly without cluttering business logic:</p>
-          <pre class="bg-zinc-100 dark:bg-zinc-900 border border-rule-light dark:border-rule-dark">@router.delete("/deployments/{id}")
-async def teardown_deployment(
-    id: UUID,
-    actor: TokenClaims = Depends(require_scopes(["infra:write"]))
+          <p>Centralizing identity in a dedicated microservice keeps downstream services clean, provided token verification remains stateless and permission checks are declarative.</p>
+          <h3>Dependency-Injected Scope Guards</h3>
+          <p>In <strong>Auth API</strong>, credentials are hashed with adaptive <code>bcrypt</code> work factors and exchanged for signed JWTs via <code>python-jose</code>. Downstream routes enforce role and scope policies cleanly using FastAPI dependency injection:</p>
+          <pre>@router.post("/admin/schemes/publish")
+async def publish_scheme(
+    payload: SchemeCreate,
+    current_user: TokenPayload = Depends(require_role(["ADMIN", "POLICY_EDITOR"]))
 ):
-    return await deployment_service.teardown(id, actor.sub)</pre>
-        `
-      },
-      'langgraph-agents': {
-        meta: 'AGENTIC ARCHITECTURES • 6 MIN READ',
-        title: 'Designing Deterministic Tool-Calling Loops in LangGraph',
-        body: `
-          <p>Linear prompt chains work well for deterministic transformations, but multi-step tool-calling workflows inevitably encounter transient API timeouts, malformed tool arguments, and ambiguous user queries.</p>
-          <h3>Why Cyclic State Graphs Win</h3>
-          <p>Modeling an agent as a directed cyclic graph with typed state transitions gives backend engineers explicit control over execution boundaries:</p>
-          <ul>
-            <li><strong>Bounded Self-Correction:</strong> When a schema validation error occurs on a tool call, the graph routes back to the reasoning node with the exact validation trace—capped by a strict <code>max_iterations</code> counter.</li>
-            <li><strong>Deterministic Checkpointing:</strong> Persisting graph state after each node execution enables safe retries and human-in-the-loop approval gates before mutating production infrastructure.</li>
-          </ul>
-          <p>Treating LLM calls as probabilistic transitions inside a deterministic state machine bridges the gap between experimental AI demos and resilient backend engineering.</p>
+    return await scheme_service.publish(payload, actor_id=current_user.sub)</pre>
+          <p>Pairing strict Pydantic request models with explicit role dependencies ensures unauthorized payloads are rejected before touching PostgreSQL connection pools.</p>
         `
       }
     };
